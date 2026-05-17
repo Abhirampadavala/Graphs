@@ -1,3 +1,11 @@
+//Traversing the whole 2D matrix using double for loop 
+//if I find an 'O' then do a DFS on it and store all the coordinates of the elements of the graph in a vector<pair<int,int>>
+//make sure to declare that vector globally, since you have to empty it after every DFS done
+//now while doing that DFS use a count variable which increments by 1 if any block of the DFS is an outsider
+//now if count!=0 then all the elements of that DFS will just be changed to 'V'
+//if count==0 then those all be changed to 'X'
+//now once again run double for loop and change every V to O
+//ALSO SEE THE SECOND APPROACH (BETTER)
 class Solution {
   public:
   
